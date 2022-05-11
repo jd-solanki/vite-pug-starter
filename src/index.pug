@@ -1,10 +1,35 @@
 doctype html
-html(lang='en')
+html(lang="en")
   head
-    meta(charset='UTF-8')
-    link(rel='icon', type='image/svg+xml', href='favicon.svg')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(charset="UTF-8")
+    link(rel="icon", type="image/svg+xml", href="favicon.svg")
+    link(rel="preconnect", href="https://fonts.googleapis.com")
+    link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin="")
+    link(
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap",
+      rel="stylesheet"
+    )
+    link(rel="stylesheet", href="./style.css")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Vite App
   body
-    #app
-    script(type='module', src='/main.js')
+    //- 👉 Navbar
+    .container.mx-auto.flex.justify-between.items-center.py-4
+      h1.font-semibold.uppercase Shankh
+      ul.flex.items-center.gap-x-8.uppercase
+        li
+          a(href="#") Home
+        li
+          a(href="#") Services
+        li
+          a(href="#") Contact Us
+
+    //- 👉 Hero
+    .container.mx-auto.relative
+      .rounded-xl.absolute.inset-0(
+        style="background-image: url('hero.jpg'); background-size: cover; background-position: center",
+        class="h-[700px] after:content-empty after:absolute after:inset-0 after:bg-black after:opacity-[0.70] after:rounded-xl z-[-1]"
+      )
+      h1.text-3xl.text-white Shankh
+      span Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, dolores?
+    script(type="module", src="/main.js")

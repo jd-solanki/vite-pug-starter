@@ -9,9 +9,13 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@prettier/plugin-pug": "^2.0.0",
+    "prettier": "^2.6.2",
+    "unocss": "^0.33.2",
     "vite": "^2.9.7"
   },
   "dependencies": {
+    "@unocss/reset": "^0.33.2",
     "pug-cli": "1.0.0-alpha6"
   }
 }

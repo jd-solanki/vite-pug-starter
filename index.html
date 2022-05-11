@@ -3,11 +3,26 @@
   <head>
     <meta charset="UTF-8">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div class="container mx-auto flex justify-between items-center py-4">
+      <h1 class="font-semibold uppercase">Shankh</h1>
+      <ul class="flex items-center gap-x-8 uppercase">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="container mx-auto relative">
+      <div class="rounded-xl absolute inset-0 h-[700px] after:content-empty after:absolute after:inset-0 after:bg-black after:opacity-[0.70] after:rounded-xl z-[-1]" style="background-image: url('hero.jpg'); background-size: cover; background-position: center"></div>
+      <h1 class="text-3xl text-white">Shankh</h1><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, dolores?</span>
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
