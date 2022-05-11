@@ -1,0 +1,17 @@
+{
+  "name": "vite-pug-starter",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "watch": "pug -w ./src -o . -P",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^2.9.7"
+  },
+  "dependencies": {
+    "pug-cli": "1.0.0-alpha6"
+  }
+}
